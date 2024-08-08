@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(65, 47, 47, 0.87);
+    font-family: sans-serif;
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 55px;
+    /* grid-template-areas: "logo li item"; */
+}
+nav .logo{
+    margin-top: 20px;
+    margin-left: 45px;
+    width: 120px;
+    cursor: pointer;
+}
+nav .ol ol{
+    list-style: none;
+    color: white;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: small;
+    font-weight: 600;
+}
+nav .ol ol li{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+nav .ol ol li:hover{
+    background-color: rgba(31, 28, 28, 0.178);
+
+}
+.sec{
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.m3{
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-US.png);
+}
+.my{
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-Y-Desktop-US-v2.png);
+}
+.ms{
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-S-Desktop-US.png);
+}
+.cyber{
+    background-image: url(https://digitalassets.tesla.com/discovery-tesla-com/image/upload/f_auto,q_auto/Homepage-Cybertruck-Desktop.jpg);
+}
+.app{
+    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Accessories-Desktop-US.png);
+}   
+.cyber>.truck{
+    padding: 6.5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35vw;
+
+}
+
+
+
+
+
+
