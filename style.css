@@ -1,233 +1,297 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-color: rgba(65, 47, 47, 0.87);
-    font-family: sans-serif;
-}
-nav{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 55px;
-    /* grid-template-areas: "logo li item"; */
-}
-nav .logo{
-    margin-top: 20px;
-    margin-left: 45px;
-    width: 120px;
-    cursor: pointer;
-}
-nav .ol ol{
-    list-style: none;
-    color: white;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    font-size: small;
-    font-weight: 600;
-}
-nav .ol ol li{
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 10px;
-    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-nav .ol ol li:hover{
-    background-color: rgba(31, 28, 28, 0.178);
-
-}
-.svgcon{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 20px;
-    
-}
-.svg{
-    margin-top: 15px;
-    height: 370px;
-    cursor: pointer;
-}
-.sec{
-    height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.m3{
-    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-US.png);
-}
-.my{
-    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-Y-Desktop-US-v2.png);
-}
-.ms{
-    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-S-Desktop-US.png);
-}
-.cyber{
-    background-image: url(https://digitalassets.tesla.com/discovery-tesla-com/image/upload/f_auto,q_auto/Homepage-Cybertruck-Desktop.jpg);
-}
-.app{
-    background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Accessories-Desktop-US.png);
-}   
-.cyber>.truck{
-    padding: 6.5%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 35vw;
-
-}
-.cont{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #fff;
-    padding: 3%;
-    text-align: center;
-}
-.cont2{
-    padding: 5%;
-}
-.f h1{
-    font-size: 56px;
-    font-weight: 600;
-}
-.f h2{
-    text-decoration: underline;
-}
-.f h3{
-    font-size: medium;
-    padding: 3px;
-}
-sup{
-    font-size: 10px;
-}
-.cont3{
-    padding: 5%;
-}
-.cont3 h1{
-    font-size: 56px;
-    font-weight: 600;
-}
-.cont3 h2{
-    font-size: 28px;
-}
-.cont3 h3{
-    text-decoration: underline;
-    padding: 10px;
-}
-.app{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 61px;
-    color: #fff;
-    flex-direction: column;
-    text-align: center;
-}
-.app h1{
-    font-size: 56px;
-    margin-top: 25px;
-}
-.btn{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 10px;
-    height: 50dvh;
-    margin: 40px;
-}
-.btn .b{
-    padding: 11px 100px;
-    font-size: 14px;
-    font-weight: 600;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid transparent;
-    transition:  all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-.btn .b:hover{
-    background-color: transparent;
-    border: 1px solid black;
-    color: #fff;
-}
-.white{
-    background-color: #fff;
-    color: #505257;
-}
-.blue{
-    background-color: #3E6AE1;
-    color: white;
-}
-.btn .c{
-    padding: 10px 85px;
-    outline: none;
-    font-size: 14px;
-    background-color: #121213;
-    color: #858688;
-    border: 1px solid transparent;
-    transition:  all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-.btn .top{
-    border-top: 3px solid #858688;
-}
-.btn .all{
-    border: 0.01rem solid #5052575b; 
-}
-.btn .c:hover{
-    background-color: #16181E;
+body {
+  background-color: black;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+nav {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 55px;
+  /* grid-template-areas: "logo li item"; */
+}
 
+nav .logo {
+  margin-top: 20px;
+  margin-left: 45px;
+  width: 120px;
+  cursor: pointer;
+}
 
+nav .ol ol {
+  list-style: none;
+  color: white;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: small;
+  font-weight: 600;
+}
 
+nav .ol ol li {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
 
+nav .ol ol li:hover {
+  background-color: rgba(31, 28, 28, 0.178);
+}
 
+.svgcon {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
 
+.svg {
+  margin-top: 15px;
+  height: 370px;
+  cursor: pointer;
+}
 
+.sec {
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
 
+.m3 {
+  background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-US.png);
+}
 
+.my {
+  background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-Y-Desktop-US-v2.png);
+}
 
+.ms {
+  background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-S-Desktop-US.png);
+}
 
+.cyber {
+  background-image: url(https://digitalassets.tesla.com/discovery-tesla-com/image/upload/f_auto,q_auto/Homepage-Cybertruck-Desktop.jpg);
+}
 
+.app {
+  background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Accessories-Desktop-US.png);
+}
 
+.cyber > .truck {
+  padding: 6.5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35vw;
+}
 
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  padding: 3%;
+  text-align: center;
+}
 
+.cont2 {
+  padding: 5%;
+}
 
+.f h1 {
+  font-size: 56px;
+  font-weight: 600;
+}
 
+.f h2 {
+  text-decoration: underline;
+}
 
+.f h3 {
+  font-size: medium;
+  padding: 3px;
+}
 
+sup {
+  font-size: 10px;
+}
 
+.cont3 {
+  padding: 5%;
+}
 
+.cont3 h1 {
+  font-size: 56px;
+  font-weight: 600;
+}
 
+.cont3 h2 {
+  font-size: 28px;
+}
 
+.cont3 h3 {
+  text-decoration: underline;
+  padding: 10px;
+}
 
+.app {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 61px;
+  color: #fff;
+  flex-direction: column;
+  text-align: center;
+}
 
+.app h1 {
+  font-size: 56px;
+  margin-top: 25px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  height: 50dvh;
+  margin: 40px;
+}
+
+.btn .b {
+  padding: 11px 100px;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.btn .b:hover {
+  background-color: transparent;
+  border: 1px solid black;
+  color: #fff;
+}
+
+.white {
+  background-color: #fff;
+  color: #505257;
+}
+
+.blue {
+  background-color: #3e6ae1;
+  color: white;
+}
+
+.btn .c {
+  padding: 10px 85px;
+  outline: none;
+  font-size: 14px;
+  background-color: #121213;
+  color: #858688;
+  border: 1px solid transparent;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.btn .top {
+  border-top: 3px solid #858688;
+}
+
+.btn .all {
+  border: 0.01rem solid #5052575b;
+}
+
+.btn .c:hover {
+  background-color: #16181e;
+}
+
+.footer {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  font-size: small;
+  margin: 50px 100px;
+}
+
+.footer .para {
+  margin: 10px 0;
+  color: #d0d1d2;
+}
+
+.footer .para a {
+  border-bottom: 1px solid #eeeeee;
+  color: #eeeeee;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: pointer;
+}
+
+.footer .para a:hover {
+  border-bottom: 2px solid #eeeeee;
+}
+
+footer ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 110px;
+  padding-bottom: 10px;
+  gap: 15px;
+  font-size: small;
+  color: #d0d1d2;
+  font-weight: 500;
+}
 
 @media screen and (max-width: 900px) {
-   nav .ol{
+  nav .ol {
     visibility: hidden;
     width: 0;
     height: 0;
-   }
-   .cyber .truck{
-   width: 45vh;
+  }
 
+  .cyber .truck {
+    width: 45vh;
+  }
 }
+
+@media screen and (max-width: 700px) {
+  .btn .b {
+    padding: 11px 9dvh;
   }
-  @media screen and (max-width: 650px) {
-    .btn .b{
-        padding: 11px 9dvh;
-    }
-    .btn .c{
-        padding: 10px 8.5dvh;
-    }
-    .app h1{
-        font-size: 40px;
-    }
+
+  .btn .c {
+    padding: 10px 8.5dvh;
   }
+
+  .app h1 {
+    font-size: 40px;
+  }
+
+  .footer {
+    margin: 40px 50px;
+  }
+
+  footer ul {
+    flex-direction: column;
+  }
+}
