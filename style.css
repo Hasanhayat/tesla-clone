@@ -134,7 +134,6 @@ sup{
     font-size: 56px;
     margin-top: 25px;
 }
-
 .btn{
     display: flex;
     justify-content: center;
@@ -180,6 +179,10 @@ sup{
 .btn .all{
     border: 0.01rem solid #5052575b; 
 }
+.btn .c:hover{
+    background-color: #16181E;
+}
+
 
 
 
@@ -212,8 +215,19 @@ sup{
     width: 0;
     height: 0;
    }
-   nav{
-   
-    
-   }
+   .cyber .truck{
+   width: 45vh;
+
+}
+  }
+  @media screen and (max-width: 650px) {
+    .btn .b{
+        padding: 11px 9dvh;
+    }
+    .btn .c{
+        padding: 10px 8.5dvh;
+    }
+    .app h1{
+        font-size: 40px;
+    }
   }
